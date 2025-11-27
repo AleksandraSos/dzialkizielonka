@@ -3,17 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria działki</title>
+
+    <!-- SEO Meta -->
+    <title>Galeria działki – Zielonka koło Bydgoszczy</title>
+    <meta name="description" content="Galeria zdjęć działki budowlanej w Zielonce koło Bydgoszczy przy ul. Kwiatów Polnych. Sprawdź zdjęcia i lokalizację działki.">
+    <meta name="keywords" content="galeria działki Zielonka Bydgoszcz, działki na sprzedaż Zielonka, Kwiatów Polnych działki zdjęcia, działki budowlane Bydgoszcz okolice">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://dzialkizielonka.pl/gallery.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Galeria działki – Zielonka koło Bydgoszczy">
+    <meta property="og:description" content="Zobacz zdjęcia działki budowlanej przy ul. Kwiatów Polnych w Zielonce koło Bydgoszczy.">
+    <meta property="og:url" content="https://dzialkizielonka.pl/gallery.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Galeria działki – Zielonka koło Bydgoszczy">
+    <meta name="twitter:description" content="Galeria zdjęć działki budowlanej w Zielonce koło Bydgoszczy.">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data: LandPlot -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LandPlot",
+      "name": "Działka budowlana – Zielonka koło Bydgoszczy",
+      "description": "Galeria zdjęć działki budowlanej przy ulicy Kwiatów Polnych w Zielonce koło Bydgoszczy.",
+      "image": [
+        "https://dzialkizielonka.pl/39/1.jpg",
+        "https://dzialkizielonka.pl/51/1.jpg",
+        "https://dzialkizielonka.pl/54/1.jpg"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Zielonka",
+        "addressRegion": "kujawsko-pomorskie",
+        "streetAddress": "Kwiatów Polnych",
+        "addressCountry": "PL"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 53.213,
+        "longitude": 18.120
+      }
+    }
+    </script>
+
+    <!-- JS -->
     <script defer src="app.js"></script>
 </head>
 <body>
 
-<h1 id="title">Galeria działki</h1>
+<header>
+    <h1 id="title">Galeria działki</h1>
+</header>
 
 <div id="gallery" class="gallery"></div>
 
 <a href="index.html" class="back">← Powrót</a>
+
+<footer>
+    <p>
+        <a href="https://www.facebook.com/share/17tasTWnAw/?mibextid=wwXIfr" target="_blank" style="text-decoration: none; color: inherit;">
+            <!-- Ikona FB -->
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="#1877F2" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 8px;">
+                <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 
+                24h11.495v-9.294H9.691V11.01h3.13V8.414c0-3.1 1.893-4.788 
+                4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 
+                0-1.796.715-1.796 1.763v2.311h3.587l-.467 3.696h-3.12V24h6.116C23.403 
+                24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0z"/>
+            </svg>
+            Odwiedź nas na Facebooku
+        </a>
+    </p>
+
+    <p style="margin-top: 15px;">
+        Kontakt: <strong>tu wpisz swój numer telefonu lub e-mail</strong>
+    </p>
+</footer>
 
 </body>
 </html>
